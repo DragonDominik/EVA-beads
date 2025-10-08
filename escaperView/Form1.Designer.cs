@@ -1,6 +1,6 @@
 ﻿namespace escaperView
 {
-    partial class mainForm
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             menuBar = new ToolStrip();
             newGameBtn = new ToolStripButton();
             mapSizeLabel = new ToolStripLabel();
@@ -36,7 +36,6 @@
             pauseBtn = new ToolStripButton();
             saveBtn = new ToolStripButton();
             loadBtn = new ToolStripButton();
-            statusStrip1 = new StatusStrip();
             gameBoard = new Panel();
             statusStrip = new StatusStrip();
             labelTime = new ToolStripStatusLabel();
@@ -86,6 +85,7 @@
             pauseBtn.Name = "pauseBtn";
             pauseBtn.Size = new Size(104, 29);
             pauseBtn.Text = "Pause/Start";
+            pauseBtn.Click += pauseBtn_Click;
             // 
             // saveBtn
             // 
@@ -95,6 +95,7 @@
             saveBtn.Name = "saveBtn";
             saveBtn.Size = new Size(53, 29);
             saveBtn.Text = "Save";
+            saveBtn.Click += saveBtn_Click;
             // 
             // loadBtn
             // 
@@ -104,15 +105,7 @@
             loadBtn.Name = "loadBtn";
             loadBtn.Size = new Size(55, 29);
             loadBtn.Text = "Load";
-            // 
-            // statusStrip1
-            // 
-            statusStrip1.ImageScalingSize = new Size(24, 24);
-            statusStrip1.Location = new Point(0, 428);
-            statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(800, 22);
-            statusStrip1.TabIndex = 1;
-            statusStrip1.Text = "statusStrip1";
+            loadBtn.Click += loadBtn_Click;
             // 
             // gameBoard
             // 
@@ -121,12 +114,13 @@
             gameBoard.Name = "gameBoard";
             gameBoard.Size = new Size(380, 356);
             gameBoard.TabIndex = 2;
+            gameBoard.Paint += gameBoard_Paint;
             // 
             // statusStrip
             // 
             statusStrip.ImageScalingSize = new Size(24, 24);
             statusStrip.Items.AddRange(new ToolStripItem[] { labelTime, labelStatus });
-            statusStrip.Location = new Point(0, 396);
+            statusStrip.Location = new Point(0, 418);
             statusStrip.Name = "statusStrip";
             statusStrip.Size = new Size(800, 32);
             statusStrip.TabIndex = 3;
@@ -144,16 +138,15 @@
             labelStatus.Size = new Size(99, 25);
             labelStatus.Text = "Start Game";
             // 
-            // mainForm
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(statusStrip);
             Controls.Add(gameBoard);
-            Controls.Add(statusStrip1);
             Controls.Add(menuBar);
-            Name = "mainForm";
+            Name = "MainForm";
             Text = "Escaper";
             menuBar.ResumeLayout(false);
             menuBar.PerformLayout();
@@ -170,7 +163,6 @@
         private ToolStripButton pauseBtn;
         private ToolStripButton saveBtn;
         private ToolStripButton loadBtn;
-        private StatusStrip statusStrip1;
         private Panel gameBoard;
         private StatusStrip statusStrip;
         private ToolStripStatusLabel labelTime;

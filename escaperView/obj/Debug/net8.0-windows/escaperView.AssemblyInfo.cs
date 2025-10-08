@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("escaperView")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("EscaperView")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("escaperView")]
-[assembly: System.Reflection.AssemblyTitleAttribute("escaperView")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa50158869a97f9abd980a3246ffccc6f5757d6b")]
+[assembly: System.Reflection.AssemblyProductAttribute("EscaperView")]
+[assembly: System.Reflection.AssemblyTitleAttribute("EscaperView")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
