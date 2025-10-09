@@ -46,7 +46,7 @@
             // 
             // menuBar
             // 
-            menuBar.BackColor = SystemColors.ControlDarkDark;
+            menuBar.BackColor = SystemColors.ActiveCaption;
             menuBar.ImageScalingSize = new Size(24, 24);
             menuBar.Items.AddRange(new ToolStripItem[] { newGameBtn, mapSizeLabel, mapSize, pauseBtn, saveBtn, loadBtn });
             menuBar.Location = new Point(0, 0);
@@ -73,6 +73,7 @@
             // 
             // mapSize
             // 
+            mapSize.BackColor = SystemColors.GradientActiveCaption;
             mapSize.Items.AddRange(new object[] { "11x11", "15x15", "21x21" });
             mapSize.Name = "mapSize";
             mapSize.Size = new Size(121, 34);
@@ -109,15 +110,16 @@
             // 
             // gameBoard
             // 
-            gameBoard.BackColor = SystemColors.ButtonFace;
-            gameBoard.Location = new Point(173, 37);
+            gameBoard.BackColor = SystemColors.GradientInactiveCaption;
+            gameBoard.Location = new Point(211, 48);
             gameBoard.Name = "gameBoard";
-            gameBoard.Size = new Size(380, 356);
+            gameBoard.Size = new Size(350, 350);
             gameBoard.TabIndex = 2;
             gameBoard.Paint += gameBoard_Paint;
             // 
             // statusStrip
             // 
+            statusStrip.BackColor = SystemColors.ActiveCaption;
             statusStrip.ImageScalingSize = new Size(24, 24);
             statusStrip.Items.AddRange(new ToolStripItem[] { labelTime, labelStatus });
             statusStrip.Location = new Point(0, 418);
@@ -142,6 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(statusStrip);
             Controls.Add(gameBoard);

@@ -141,25 +141,27 @@ namespace escaperView
         private void gameBoard_Paint(object sender, PaintEventArgs e)
         {
             if (logic == null) return;
-
+            gameBoard.BackColor = SystemColors.ActiveCaption;
             var board = logic.GetBoard();
             Graphics g = e.Graphics;
+            
 
             for (int x = 0; x < board.Size; x++)
                 for (int y = 0; y < board.Size; y++)
-                    g.DrawRectangle(Pens.Black, new Rectangle(x * cellSize, y * cellSize, cellSize, cellSize));
+                    g.DrawRectangle(Pens.Black, x * cellSize, y * cellSize, cellSize - 1, cellSize - 1);
 
+            //aknák
             int margin = cellSize / 5;
             foreach (var mine in board.Mines)
                 g.FillRectangle(Brushes.Black, mine.Pos.X * cellSize + margin, mine.Pos.Y * cellSize + margin, cellSize - 2 * margin, cellSize - 2 * margin);
 
+            //player
             var p = board.Player.Pos;
-            g.FillEllipse(Brushes.Blue, p.X * cellSize, p.Y * cellSize, cellSize, cellSize);
+            g.FillEllipse(Brushes.Blue, p.X * cellSize + margin, p.Y * cellSize + margin, cellSize - 2 * margin, cellSize - 2 * margin);
 
+            //ellenfelek
             foreach (var enemy in board.Enemies.Where(e => e.IsActive))
-                g.FillEllipse(Brushes.Red, enemy.Pos.X * cellSize, enemy.Pos.Y * cellSize, cellSize, cellSize);
-
-            g.DrawRectangle(new Pen(Color.Black, 4), 0, 0, gameBoard.Width - 1, gameBoard.Height - 1);
+                g.FillEllipse(Brushes.Red, enemy.Pos.X * cellSize + margin, enemy.Pos.Y * cellSize + margin, cellSize - 2 * margin, cellSize - 2 * margin);
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
