@@ -10,7 +10,7 @@ namespace escaperView
 {
     public partial class MainForm : Form
     {
-        private IGameController _logic;
+        private IGameController? _logic;
         private IPersistence _persistence;
         private System.Windows.Forms.Timer _gameTimer;
         private int _elapsedTime;
@@ -23,9 +23,9 @@ namespace escaperView
             _persistence = new Persistence();
 
             _gameTimer = new System.Windows.Forms.Timer { Interval = 500 };
-            _gameTimer.Tick += GameTimer_Tick;
+            _gameTimer.Tick += GameTimer_Tick!;
 
-            gameBoard.Paint += gameBoard_Paint;
+            gameBoard.Paint += GameBoard_Paint!;
             gameBoard.GetType()
                 .GetProperty("DoubleBuffered", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic)
                 ?.SetValue(gameBoard, true, null);
@@ -34,7 +34,7 @@ namespace escaperView
             labelStatus.Text = "Start a game";
         }
 
-        private void newGameBtn_Click(object sender, EventArgs e)
+        private void NewGameBtn_Click(object sender, EventArgs e)
         {
             int size = mapSize.SelectedItem?.ToString() switch
             {
@@ -73,9 +73,15 @@ namespace escaperView
             gameBoard.Invalidate();
         }
 
-        private void pauseBtn_Click(object sender, EventArgs e)
+        private void PauseBtn_Click(object sender, EventArgs e)
         {
             if (_logic == null) return;
+
+            if (_logic.IsGameOver)
+            {
+                MessageBox.Show("Cannot pause or resume a finished game!");
+                return;
+            }
 
             _isPaused = !_isPaused;
             if (_isPaused)
@@ -86,7 +92,8 @@ namespace escaperView
             labelStatus.Text = _isPaused ? "Game Paused" : "Game Running";
         }
 
-        private void saveBtn_Click(object sender, EventArgs e)
+
+        private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (_logic == null)
             {
@@ -111,7 +118,7 @@ namespace escaperView
         }
 
 
-        private void loadBtn_Click(object sender, EventArgs e)
+        private void LoadBtn_Click(object sender, EventArgs e)
         {
             using OpenFileDialog ofd = new OpenFileDialog
             {
@@ -146,7 +153,7 @@ namespace escaperView
             _gameTimer.Stop();
             _isPaused = true;
 
-            string result = _logic.PlayerWon ? "You won" : "You lost";
+            string result = _logic!.PlayerWon ? "You won" : "You lost";
             labelStatus.Text = result;
 
             MessageBox.Show($"{result} in {_elapsedTime} seconds!", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -165,7 +172,7 @@ namespace escaperView
                 EndGame();
         }
 
-        private void gameBoard_Paint(object sender, PaintEventArgs e)
+        private void GameBoard_Paint(object sender, PaintEventArgs e)
         {
             if (_logic == null) return;
 

@@ -63,7 +63,7 @@
             newGameBtn.Name = "newGameBtn";
             newGameBtn.Size = new Size(102, 29);
             newGameBtn.Text = "New Game";
-            newGameBtn.Click += newGameBtn_Click;
+            newGameBtn.Click += NewGameBtn_Click;
             // 
             // mapSizeLabel
             // 
@@ -86,7 +86,7 @@
             pauseBtn.Name = "pauseBtn";
             pauseBtn.Size = new Size(104, 29);
             pauseBtn.Text = "Pause/Start";
-            pauseBtn.Click += pauseBtn_Click;
+            pauseBtn.Click += PauseBtn_Click;
             // 
             // saveBtn
             // 
@@ -96,7 +96,7 @@
             saveBtn.Name = "saveBtn";
             saveBtn.Size = new Size(53, 29);
             saveBtn.Text = "Save";
-            saveBtn.Click += saveBtn_Click;
+            saveBtn.Click += SaveBtn_Click;
             // 
             // loadBtn
             // 
@@ -106,7 +106,7 @@
             loadBtn.Name = "loadBtn";
             loadBtn.Size = new Size(55, 29);
             loadBtn.Text = "Load";
-            loadBtn.Click += loadBtn_Click;
+            loadBtn.Click += LoadBtn_Click;
             // 
             // gameBoard
             // 
@@ -115,7 +115,7 @@
             gameBoard.Name = "gameBoard";
             gameBoard.Size = new Size(350, 350);
             gameBoard.TabIndex = 2;
-            gameBoard.Paint += gameBoard_Paint;
+            gameBoard.Paint += GameBoard_Paint;
             // 
             // statusStrip
             // 
