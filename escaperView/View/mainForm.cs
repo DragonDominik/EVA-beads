@@ -10,20 +10,20 @@ namespace escaperView
 {
     public partial class MainForm : Form
     {
-        private IGameController logic;
-        private IPersistence persistence;
-        private System.Windows.Forms.Timer gameTimer;
-        private int elapsedTime;
-        private int cellSize;
-        private bool isPaused = true;
+        private IGameController _logic;
+        private IPersistence _persistence;
+        private System.Windows.Forms.Timer _gameTimer;
+        private int _elapsedTime;
+        private int _cellSize;
+        private bool _isPaused = true;
 
         public MainForm()
         {
             InitializeComponent();
-            persistence = new Persistence();
+            _persistence = new Persistence();
 
-            gameTimer = new System.Windows.Forms.Timer { Interval = 500 };
-            gameTimer.Tick += GameTimer_Tick;
+            _gameTimer = new System.Windows.Forms.Timer { Interval = 500 };
+            _gameTimer.Tick += GameTimer_Tick;
 
             gameBoard.Paint += gameBoard_Paint;
             gameBoard.GetType()
@@ -61,12 +61,12 @@ namespace escaperView
                 board.Mines.Add(new Mine(pos));
             }
 
-            logic = new GameController(board);
-            elapsedTime = 0;
+            _logic = new GameController(board);
+            _elapsedTime = 0;
             labelTime.Text = "Time: 0";
 
-            isPaused = false;
-            gameTimer.Start();
+            _isPaused = false;
+            _gameTimer.Start();
             labelStatus.Text = "Game Running";
 
             ResizeAndCenterGameBoard();
@@ -75,22 +75,28 @@ namespace escaperView
 
         private void pauseBtn_Click(object sender, EventArgs e)
         {
-            if (logic == null) return;
+            if (_logic == null) return;
 
-            isPaused = !isPaused;
-            if (isPaused)
-                gameTimer.Stop();
+            _isPaused = !_isPaused;
+            if (_isPaused)
+                _gameTimer.Stop();
             else
-                gameTimer.Start();
+                _gameTimer.Start();
 
-            labelStatus.Text = isPaused ? "Game Paused" : "Game Running";
+            labelStatus.Text = _isPaused ? "Game Paused" : "Game Running";
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            if (logic == null)
+            if (_logic == null)
             {
                 MessageBox.Show("No game to save!");
+                return;
+            }
+
+            if (_logic.IsGameOver)
+            {
+                MessageBox.Show("Cannot save a finished game!");
                 return;
             }
 
@@ -100,9 +106,10 @@ namespace escaperView
                 $"escaper_{timestamp}.json"
             );
 
-            persistence.SaveGame(logic.GetBoard(), path);
+            _persistence.SaveGame(_logic.GetBoard(), path);
             MessageBox.Show($"Game saved to:\n{path}");
         }
+
 
         private void loadBtn_Click(object sender, EventArgs e)
         {
@@ -117,11 +124,11 @@ namespace escaperView
             {
                 try
                 {
-                    logic = new GameController(persistence.LoadGame(ofd.FileName));
-                    elapsedTime = 0;
+                    _logic = new GameController(_persistence.LoadGame(ofd.FileName));
+                    _elapsedTime = 0;
                     labelTime.Text = "Time: 0";
-                    isPaused = true;
-                    gameTimer.Stop();
+                    _isPaused = true;
+                    _gameTimer.Stop();
                     labelStatus.Text = "Game Paused";
 
                     ResizeAndCenterGameBoard();
@@ -136,69 +143,68 @@ namespace escaperView
 
         private void EndGame()
         {
-            gameTimer.Stop();
-            isPaused = true;
+            _gameTimer.Stop();
+            _isPaused = true;
 
-            string result = logic.PlayerWon ? "You won" : "You lost";
+            string result = _logic.PlayerWon ? "You won" : "You lost";
             labelStatus.Text = result;
 
-            // popup játék vége
-            MessageBox.Show($"{result} in {elapsedTime} seconds!", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"{result} in {_elapsedTime} seconds!", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void GameTimer_Tick(object sender, EventArgs e)
         {
-            if (logic == null || isPaused) return;
+            if (_logic == null || _isPaused) return;
 
-            logic.MoveEnemies();
-            elapsedTime++;
-            labelTime.Text = $"Time: {elapsedTime}";
+            _logic.MoveEnemies();
+            _elapsedTime++;
+            labelTime.Text = $"Time: {_elapsedTime}";
             gameBoard.Invalidate();
 
-            if (logic.IsGameOver)
+            if (_logic.IsGameOver)
                 EndGame();
         }
 
         private void gameBoard_Paint(object sender, PaintEventArgs e)
         {
-            if (logic == null) return;
+            if (_logic == null) return;
 
-            var board = logic.GetBoard();
+            var board = _logic.GetBoard();
             Graphics g = e.Graphics;
 
             for (int x = 0; x < board.Size; x++)
                 for (int y = 0; y < board.Size; y++)
-                    g.DrawRectangle(Pens.Black, x * cellSize, y * cellSize, cellSize - 1, cellSize - 1);
+                    g.DrawRectangle(Pens.Black, x * _cellSize, y * _cellSize, _cellSize - 1, _cellSize - 1);
 
-            int margin = cellSize / 5;
+            int margin = _cellSize / 5;
 
             foreach (var mine in board.Mines)
-                g.FillRectangle(Brushes.Black, mine.Pos.X * cellSize + margin, mine.Pos.Y * cellSize + margin, cellSize - 2 * margin, cellSize - 2 * margin);
+                g.FillRectangle(Brushes.Black, mine.Pos.X * _cellSize + margin, mine.Pos.Y * _cellSize + margin, _cellSize - 2 * margin, _cellSize - 2 * margin);
 
             var p = board.Player.Pos;
-            g.FillEllipse(Brushes.Blue, p.X * cellSize + margin, p.Y * cellSize + margin, cellSize - 2 * margin, cellSize - 2 * margin);
+            g.FillEllipse(Brushes.Blue, p.X * _cellSize + margin, p.Y * _cellSize + margin, _cellSize - 2 * margin, _cellSize - 2 * margin);
 
             foreach (var enemy in board.Enemies.Where(e => e.IsActive))
-                g.FillEllipse(Brushes.Red, enemy.Pos.X * cellSize + margin, enemy.Pos.Y * cellSize + margin, cellSize - 2 * margin, cellSize - 2 * margin);
+                g.FillEllipse(Brushes.Red, enemy.Pos.X * _cellSize + margin, enemy.Pos.Y * _cellSize + margin, _cellSize - 2 * margin, _cellSize - 2 * margin);
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (logic == null || isPaused)
+            if (_logic == null || _isPaused)
                 return base.ProcessCmdKey(ref msg, keyData);
 
             switch (keyData)
             {
-                case Keys.Up: logic.MovePlayer(0, -1); break;
-                case Keys.Down: logic.MovePlayer(0, 1); break;
-                case Keys.Left: logic.MovePlayer(-1, 0); break;
-                case Keys.Right: logic.MovePlayer(1, 0); break;
+                case Keys.Up: _logic.MovePlayer(0, -1); break;
+                case Keys.Down: _logic.MovePlayer(0, 1); break;
+                case Keys.Left: _logic.MovePlayer(-1, 0); break;
+                case Keys.Right: _logic.MovePlayer(1, 0); break;
                 default: return base.ProcessCmdKey(ref msg, keyData);
             }
 
             gameBoard.Invalidate();
 
-            if (logic.IsGameOver)
+            if (_logic.IsGameOver)
                 EndGame();
 
             return true;
@@ -206,16 +212,16 @@ namespace escaperView
 
         private void ResizeAndCenterGameBoard()
         {
-            if (logic == null) return;
+            if (_logic == null) return;
 
-            int boardSize = logic.GetBoard().Size;
+            int boardSize = _logic.GetBoard().Size;
             int padding = 10;
             int reservedHeight = (menuBar?.Height ?? 0) + (statusStrip?.Height ?? 0) + 2 * padding;
             int availableWidth = ClientSize.Width - 2 * padding;
             int availableHeight = ClientSize.Height - reservedHeight;
 
-            cellSize = Math.Min(availableWidth / boardSize, availableHeight / boardSize);
-            int panelSize = cellSize * boardSize;
+            _cellSize = Math.Min(availableWidth / boardSize, availableHeight / boardSize);
+            int panelSize = _cellSize * boardSize;
 
             gameBoard.Width = gameBoard.Height = panelSize;
             gameBoard.Left = (ClientSize.Width - panelSize) / 2;

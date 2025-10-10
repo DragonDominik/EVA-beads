@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\drago\\Documents\\BEAD1\\EscaperView\\EscaperView.csproj",
+      "projectUniqueName": "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\escaperView\\EscaperView.csproj",
       "projectName": "EscaperView",
-      "projectPath": "C:\\Users\\drago\\Documents\\BEAD1\\EscaperView\\EscaperView.csproj",
+      "projectPath": "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\escaperView\\EscaperView.csproj",
       "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\drago\\Documents\\BEAD1\\EscaperView\\obj\\",
+      "outputPath": "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\escaperView\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\drago\\Documents\\BEAD1\\Escaper\\Escaper.csproj": {
-              "projectPath": "C:\\Users\\drago\\Documents\\BEAD1\\Escaper\\Escaper.csproj"
+            "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\Escaper\\Escaper.csproj": {
+              "projectPath": "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\Escaper\\Escaper.csproj"
             }
           }
         }

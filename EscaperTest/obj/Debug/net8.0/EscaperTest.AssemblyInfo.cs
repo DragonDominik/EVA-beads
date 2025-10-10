@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EscaperTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3c287d9b59aaf5d5fb25725913766827cdfd0c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5dcf1ce4660989e5c147da08f36760788cf0e58c")]
 [assembly: System.Reflection.AssemblyProductAttribute("EscaperTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EscaperTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

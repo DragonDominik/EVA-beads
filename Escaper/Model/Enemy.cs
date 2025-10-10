@@ -9,6 +9,7 @@ namespace Escaper.Model
     public class Enemy
     {
         public Position Pos { get; set; }
+
         public bool IsActive { get; set; } = true;
 
         public Enemy(Position pos)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "52Q3Ib9XCsU=",
+  "dgSpecHash": "6ttBKGQ6qFU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\drago\\Documents\\BEAD1\\EscaperTest\\EscaperTest.csproj",
+  "projectFilePath": "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\EscaperTest\\EscaperTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\drago\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\drago\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\drago\\Documents\\BEAD1\\Escaper\\Escaper.csproj": {}
+    "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\Escaper\\Escaper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\drago\\Documents\\BEAD1\\Escaper\\Escaper.csproj": {
+    "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\Escaper\\Escaper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\drago\\Documents\\BEAD1\\Escaper\\Escaper.csproj",
+        "projectUniqueName": "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\Escaper\\Escaper.csproj",
         "projectName": "Escaper",
-        "projectPath": "C:\\Users\\drago\\Documents\\BEAD1\\Escaper\\Escaper.csproj",
+        "projectPath": "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\Escaper\\Escaper.csproj",
         "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\drago\\Documents\\BEAD1\\Escaper\\obj\\",
+        "outputPath": "C:\\Users\\drago\\Documents\\BEAD1\\EVA_bead_1\\Escaper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
