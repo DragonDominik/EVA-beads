@@ -73,7 +73,7 @@ namespace EscaperTest
 
             _controller.MoveEnemies();
 
-            // ellenőrizzük, hogy az ellenség közelebb került
+            // ellenőrizzük hogy az ellenség közelebb került
             int oldDist = Math.Abs(startPos.X - _board.Player.Pos.X) + Math.Abs(startPos.Y - _board.Player.Pos.Y);
             int newDist = Math.Abs(enemy.Pos.X - _board.Player.Pos.X) + Math.Abs(enemy.Pos.Y - _board.Player.Pos.Y);
 

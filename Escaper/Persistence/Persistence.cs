@@ -23,7 +23,14 @@ namespace Escaper.Persistance
                 throw new FileNotFoundException($"Save file not found: {path}");
 
             string json = File.ReadAllText(path);
-            return JsonSerializer.Deserialize<Board>(json);
+            var board = JsonSerializer.Deserialize<Board>(json);
+
+            //hogy ne legyen possible null reference
+            if (board is null)
+                throw new InvalidOperationException("Failed to load game");
+
+            return board;
         }
+
     }
 }

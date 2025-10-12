@@ -17,10 +17,10 @@ namespace Escaper.Model
         {
             Size = size;
 
-            // A játékos a bal felső sarokban
+            // Player felső sor közép
             Player = new Player(new Position(size / 2, 0));
 
-            // Két ellenfél a bal és jobb alsó sarokban
+            // Két Enemy a bal és jobb alsó sarokban
             Enemies = new List<Enemy>
             {
                 new Enemy(new Position(0, size - 1)),
