@@ -1,34 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Escaper.Persistence;
 
-namespace Escaper.Persistence
+public class Board
 {
-    public class Board
+    public int Size { get; set; }
+    public Player Player { get; set; }
+    public List<Enemy> Enemies { get; set; }
+    public List<Mine> Mines { get; set; }
+
+    // Paraméter nélküli konstruktor
+    public Board()
     {
-        public int Size { get; set; }
-        public Player Player { get; set; }
-        public List<Enemy> Enemies { get; set; }
-        public List<Mine> Mines { get; set; }
+        Mines = new List<Mine>();
+        Enemies = new List<Enemy>();
+    }
 
-        public Board(int size)
+    public Board(int size, int mineCount = 10)
+    {
+        Size = size;
+        Player = new Player(new Position(size / 2, 0));
+        Enemies = new List<Enemy>
         {
-            Size = size;
+            new Enemy(new Position(0, size - 1)),
+            new Enemy(new Position(size - 1, size - 1))
+        };
+        Mines = new List<Mine>();
+        GenerateMines(mineCount);
+    }
 
-            // Player felső sor közép
-            Player = new Player(new Position(size / 2, 0));
-
-            // Két Enemy a bal és jobb alsó sarokban
-            Enemies = new List<Enemy>
+    private void GenerateMines(int count)
+    {
+        Random rnd = new Random();
+        for (int i = 0; i < count; i++)
+        {
+            Position pos;
+            do
             {
-                new Enemy(new Position(0, size - 1)),
-                new Enemy(new Position(size - 1, size - 1))
-            };
+                pos = new Position(rnd.Next(Size), rnd.Next(Size));
+            }
+            while (Mines.Any(m => m.Pos.Equals(pos))
+                   || Player.Pos.Equals(pos)
+                   || Enemies.Any(e => e.Pos.Equals(pos)));
 
-            Mines = new List<Mine>();
+            Mines.Add(new Mine(pos));
         }
-
     }
 }

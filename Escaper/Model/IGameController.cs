@@ -11,9 +11,15 @@ namespace Escaper.Model
     {
         bool IsGameOver { get; }
         bool PlayerWon { get; }
+        int ElapsedTime { get; }
 
         void MovePlayer(int dx, int dy);
-        void MoveEnemies();
+        void StartGame();
+        void PauseGame();
+        void ResumeGame();
         Board GetBoard();
+
+        event Action? BoardUpdated;
+        event Action? GameEnded;
     }
 }
