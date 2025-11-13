@@ -15,17 +15,17 @@ namespace EscaperWPF.ViewModel
     public class MainViewModel : ViewModelBase
     {
         private IGameController? _logic;
-        private IPersistence _persistence;
+        private readonly IPersistence _persistence;
         private bool _isPaused = true;
         private int _cellSize = 30;
-        public ObservableCollection<UIElement> BoardElements { get; } = new();
+        public ObservableCollection<UIElement> BoardElements { get; } = [];
         public DelegateCommand NewGameCommand { get; }
         public DelegateCommand PauseCommand { get; }
         public DelegateCommand SaveCommand { get; }
         public DelegateCommand LoadCommand { get; }
         public DelegateCommand MovePlayerCommand { get; }
 
-        public ObservableCollection<int> MapSizes { get; } = new ObservableCollection<int> { 11, 15, 21 };
+        public ObservableCollection<int> MapSizes { get; } = [11, 15, 21];
 
         private int _selectedMapSize = 21;
         public int SelectedMapSize
@@ -34,14 +34,14 @@ namespace EscaperWPF.ViewModel
             set => SetProperty(ref _selectedMapSize, value);
         }
 
-        // Status & time
+        // status, time
         private string _status = "Start a game";
         public string Status { get => _status; set => SetProperty(ref _status, value); }
 
         private string _time = "Time: 0";
         public string Time { get => _time; set => SetProperty(ref _time, value); }
 
-        // Canvas size
+        // canvas size
         private double _canvasWidth = 600;
         public double CanvasWidth
         {

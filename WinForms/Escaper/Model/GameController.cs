@@ -56,8 +56,8 @@ namespace Escaper.Model
             if (newPos.X < 0 || newPos.Y < 0 || newPos.X >= _board.Size || newPos.Y >= _board.Size) return;
 
             _board.Player.Pos = newPos;
-            CheckCollisions();
             BoardUpdated?.Invoke();
+            CheckCollisions();
         }
 
         public void MoveEnemies()

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EscaperWPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b6b73edbc2ab385d893a29695854dda427d342b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d09262878f91239b8751b37024e98138274fded6")]
 [assembly: System.Reflection.AssemblyProductAttribute("EscaperWPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EscaperWPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

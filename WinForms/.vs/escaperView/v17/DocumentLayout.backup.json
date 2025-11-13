@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WinForms\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7591982C-329D-49BC-4076-25E89DB6BB44}|Escaper\\Escaper.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\winforms\\escaper\\model\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7591982C-329D-49BC-4076-25E89DB6BB44}|Escaper\\Escaper.csproj|solutionrelative:escaper\\model\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WinForms\\Escaper\\Model\\GameController.cs",
+              "RelativeDocumentMoniker": "Escaper\\Model\\GameController.cs",
+              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WinForms\\Escaper\\Model\\GameController.cs",
+              "RelativeToolTip": "Escaper\\Model\\GameController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAADwvzsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:42:05.505Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"

@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,19 +11,36 @@
       "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F21D500-6F61-0461-69FC-803AD57EC632}|..\\Escaper\\Escaper.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaper\\model\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\viewmodel\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:viewmodel\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\viewmodel\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:viewmodel\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F21D500-6F61-0461-69FC-803AD57EC632}|..\\Escaper\\Escaper.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaper\\model\\igamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F21D500-6F61-0461-69FC-803AD57EC632}|..\\Escaper\\Escaper.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaper\\model\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30EB3AA7-53FC-7684-9A3F-33FDBAB99CA6}|..\\EscaperTest\\EscaperTest.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escapertest\\escapermodeltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30EB3AA7-53FC-7684-9A3F-33FDBAB99CA6}|..\\EscaperTest\\EscaperTest.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escapertest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E124C66-B12E-436E-8916-FA8B3C59DCAA}|EscaperWPF.csproj|c:\\users\\drago\\documents\\windows gits\\eva-beads\\wpf\\escaperwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -45,15 +54,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EscaperModelTest.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperTest\\EscaperModelTest.cs",
+              "RelativeDocumentMoniker": "..\\EscaperTest\\EscaperModelTest.cs",
+              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperTest\\EscaperModelTest.cs",
+              "RelativeToolTip": "..\\EscaperTest\\EscaperModelTest.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAYwJgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T10:34:52.475Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperTest\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "..\\EscaperTest\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperTest\\MSTestSettings.cs",
+              "RelativeToolTip": "..\\EscaperTest\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T10:34:51.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
@@ -61,12 +90,11 @@
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T18:39:04.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T18:39:04.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -78,26 +106,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\ViewModel\\MainViewModel.cs",
               "RelativeToolTip": "ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T18:11:26.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "DelegateCommand.cs",
               "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\ViewModel\\DelegateCommand.cs",
               "RelativeDocumentMoniker": "ViewModel\\DelegateCommand.cs",
               "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\ViewModel\\DelegateCommand.cs",
               "RelativeToolTip": "ViewModel\\DelegateCommand.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T18:11:25.245Z",
               "EditorCaption": ""
@@ -105,44 +133,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-12T18:06:34.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T18:06:30.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\ViewModel\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "ViewModel\\ViewModelBase.cs",
-              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\ViewModel\\ViewModelBase.cs",
-              "RelativeToolTip": "ViewModel\\ViewModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T18:14:23.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -156,15 +146,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\View\\MainWindow.xaml",
+              "RelativeToolTip": "View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-12T18:06:34.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\ViewModel\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\ViewModel\\ViewModelBase.cs",
+              "RelativeToolTip": "ViewModel\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:14:23.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IGameController.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\Escaper\\Model\\IGameController.cs",
+              "RelativeDocumentMoniker": "..\\Escaper\\Model\\IGameController.cs",
+              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\Escaper\\Model\\IGameController.cs",
+              "RelativeToolTip": "..\\Escaper\\Model\\IGameController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T10:40:18.123Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GameController.cs",
               "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\Escaper\\Model\\GameController.cs",
               "RelativeDocumentMoniker": "..\\Escaper\\Model\\GameController.cs",
               "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\Escaper\\Model\\GameController.cs",
               "RelativeToolTip": "..\\Escaper\\Model\\GameController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA5wDsAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwDsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T18:18:53.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T18:18:53.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\drago\\Documents\\Windows Gits\\EVA-beads\\WPF\\EscaperWPF\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "View\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T18:06:30.792Z"
             }
           ]
         }
