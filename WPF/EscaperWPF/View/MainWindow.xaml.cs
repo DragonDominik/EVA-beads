@@ -6,12 +6,9 @@ namespace EscaperWPF
 {
     public partial class MainWindow : Window
     {
-        private MainViewModel _viewModel;
-
         public MainWindow()
         {
             InitializeComponent();
-            _viewModel = DataContext as MainViewModel;
         }
     }
 }

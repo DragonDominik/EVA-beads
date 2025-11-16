@@ -6,9 +6,8 @@ namespace EscaperWPF
 {
     public partial class App : Application
     {
-        private MainWindow _window;
-        private MainViewModel _viewModel;
-
+        private MainWindow? _window;
+        private MainViewModel? _viewModel;
         public App()
         {
             Startup += App_Startup;

@@ -15,7 +15,7 @@ namespace EscaperWPF.ViewModel
     public class MainViewModel : ViewModelBase
     {
         private IGameController? _logic;
-        private readonly IPersistence _persistence;
+        private readonly IPersistence? _persistence;
         private bool _isPaused = true;
         private int _cellSize = 30;
         public ObservableCollection<UIElement> BoardElements { get; } = [];
@@ -129,7 +129,7 @@ namespace EscaperWPF.ViewModel
                 $"escaper_{timestamp}.json"
             );
 
-            _persistence.SaveGame(_logic.GetBoard(), path);
+            _persistence!.SaveGame(_logic.GetBoard(), path);
             MessageBox.Show($"Game saved to:\n{path}");
         }
 
@@ -147,7 +147,7 @@ namespace EscaperWPF.ViewModel
                 if (_logic != null && _logic is IDisposable disposable)
                     disposable.Dispose();
 
-                _logic = new GameController(_persistence.LoadGame(ofd.FileName));
+                _logic = new GameController(_persistence!.LoadGame(ofd.FileName));
                 _logic.BoardUpdated += () => Application.Current.Dispatcher.Invoke(UpdateBoard);
                 _logic.GameEnded += () => Application.Current.Dispatcher.Invoke(EndGame);
 
@@ -177,15 +177,20 @@ namespace EscaperWPF.ViewModel
         {
             if (_logic == null) return;
 
-            var board = _logic.GetBoard();
+            var window = Application.Current?.MainWindow;
+            if (window == null) return;
 
-            // meret beállítás
-            double availableWidth = Application.Current.MainWindow.ActualWidth - 20; // padding
-            double availableHeight = Application.Current.MainWindow.ActualHeight
-                                     - ((System.Windows.Controls.Panel)Application.Current.MainWindow.FindName("TopPanel")).ActualHeight
-                                     - 40; // extra padding
+            var board = _logic.GetBoard();
+            if (board?.Player?.Pos == null) return;
+
+            var topPanel = window.FindName("TopPanel") as Panel;
+            if (topPanel == null) return;
+
+            double availableWidth = window.ActualWidth - 20;
+            double availableHeight = window.ActualHeight - topPanel.ActualHeight - 40;
 
             _cellSize = (int)Math.Min(availableWidth / board.Size, availableHeight / board.Size);
+
 
             CanvasWidth = _cellSize * board.Size;
             CanvasHeight = _cellSize * board.Size;
@@ -248,7 +253,8 @@ namespace EscaperWPF.ViewModel
                 BoardElements.Add(eEllipse);
             }
 
-            Time = $"Time: {_logic?.ElapsedTime ?? 0}";
+            int elapsed = _logic?.ElapsedTime ?? 0;
+            Time = $"Time: {elapsed}";
         }
 
     }
